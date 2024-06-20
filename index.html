@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mell Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Website Konversi Suhu</h1>
+    </header>
+
+    <main>
+        <p>Cara Penggunaan :
+            <p>1. Masukkan nilai suhu derajat Celcius (&deg;C) ke kolom Celsius atau Fahrenheit (&deg;F) ke kolom Fahrenheit</p>
+            <p>2. Klik tombol "Konversi" untuk mendapatkan hasil konversi dalam bentuk Fahrenheit atau Celsius</p>
+            <p> NB: </p>
+            <p>Tombol "Reset" ialah tombol untuk mengosongkan kolom</p>
+            <p>Tombol "Reverse" tombol untuk mengonversi nilai dari Fahrenheit ke Celcius</p>
+        </p>
+        <br>
+        <!-- Section Celsius -->
+        <section class="celcius-container">
+            <header>
+                <h3>Celcius (&deg;C):</h3>
+            </header>
+
+            <section>
+                <textarea id="celcius-input"></textarea>
+
+                <section>
+                    <button class="button green-color" id="convert-button">Konversi</button>
+                    <button class="button red-color" id="reset-button">Reset</button>
+                    <button class="button blue-color" id="reverse-button">Reverse</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="result-container">
+            <!-- Section Fahrenheit -->
+            <section>
+                <header>
+                    <h3>Fahrenheit (&deg;F):</h3>
+                </header>
+
+                <section>
+                    <textarea id="fahrenheit-output"></textarea>
+                </section>
+            </section>
+
+            <!-- Section Calculate -->
+            <section>
+                <header>
+                    <h3>Conversion Calculate:</h3>
+                </header>
+
+                <section>
+                    <textarea id="calculate-output" readonly></textarea>
+                </section>
+            </section>
+        </section>
+        <br>
+        <hr/>
+
+        <!-- Section Formula/Info -->
+        <section>
+            <header>
+                <h1>Rumus nya :</h1>
+            </header>
+
+            <p>Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</p>
+            <p><span class="subject-info">S</span><sub>(&deg;C)</sub> = (<span class="subject-info">S</span><sub>(&deg;F)</sub> - 32) / 1.8</p>
+
+            <p>Dari Fahrenheit (&deg;F) ke Celcius (&deg;C)</p>
+            <p><span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 1.8) + 32</p>
+
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
